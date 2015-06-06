@@ -1,0 +1,387 @@
+@import url(xosystpl.css);
+@import url(forms.css);
+@import url(blocks.css);
+@import url(content.css);
+
+html {
+        padding: 0 10px;
+}
+body {
+        margin: 0;
+        background: url('../img/background.jpg') repeat-x top left #666666;
+        padding: 0px;
+        color: #333;
+        font-family: Verdana, Arial, "Lucida Grande", sans-serif;
+        font-size: 10pt;
+}
+
+/* ======= Body wrapper ======= */
+#xo-wrapper {
+         width: 986px;
+         padding: 0px 0px 5px 0px;
+         margin:0px auto;
+         background: transparent;
+	 border: 0px solid #fff;
+         z-index: 3;
+}
+
+#xo-bgstatic-top {
+     z-index: 2;
+     padding: 0;
+     margin: 0;
+     width: 100%;
+}
+
+#xo-bgstatic {
+         z-index: 1;
+         padding: 0;
+         margin: 0;
+         width: 100%;
+}
+#xo-canvas {
+        margin: 0;
+        background: #eee url(../img/contentblock-bg.jpg) repeat-x scroll top left;
+        color: #333;
+}
+body.theme-dialog #xo-canvas {
+        margin: 0 6px;
+}
+/*================= Content Zone ===================*/
+#xo-canvas-content {
+        background: #eee url(../img/contentblock-bg.jpg) repeat-x scroll top left;
+	border: 3px solid #fafafa;
+        color: inherit;
+}
+
+#xo-page {
+        background: #eee url(../img/contentblock-bg.jpg) repeat-x scroll top left;
+        padding-top: 10px;
+        max-width: 500px; /* add by kris */
+}
+
+#xo-canvas-rightcolumn {
+    padding: .0em;
+}
+
+#xo-content {
+        clear: both;
+        margin: 0 10px 10px 10px;
+        background: #eee url(../img/contentblock-bg.jpg) repeat-x scroll top left;
+        padding: 0.5em;
+        color: #333;
+}
+
+#xo-content table td {
+    vertical-align: top;
+    padding: 4px;
+    max-width: 480px;
+}
+
+/* ============== header ================= */
+#xo-header { background: #666 url(../img/header-bg.jpg) no-repeat top center; }
+
+/* ---------- Banner ---------- */
+#xo-banner {
+        clear: both;
+        /* Use relative pos to ensure the banner ad img/flash is relative to the header */
+        position: relative;
+        display: block;
+        z-index: 100;
+        width: 100%;
+        height: 106px;
+	margin: 50px 0 0 0;
+        background: #666 url(../img/header-bg.jpg) no-repeat top center;
+        color: #fafafa;
+}
+
+#xo-banner.commercial {
+        height: 106px;
+        background-image: url(../img/header-bg_big.jpg);
+        background: transparent;
+}
+
+body.theme-dialog #xo-banner {
+	height:		48px;
+	padding-top:	6px;
+	padding-left:	10px;
+} 
+
+#xo-banner-ad {
+	background:	transparent url('../img/bg-ad-top.png') no-repeat;
+	width:		480px;
+	height:		72px;
+	padding:	6px;
+	position:	absolute;
+	right:		40px;
+	top:		30px;
+}
+
+#xo-banner-ad object, #xo-banner-ad img {
+	display: block;
+}
+
+/*---------------------- Site name in header ----------------------------*/
+#xo-site-title {}
+a#xo-site-title {}
+a:hover#xo-site-title {}
+#xo-site-title.commercial {}
+#xo-site-title .commercial a:hover {}
+/*----------------------- slogan in header ------------------------*/
+#xo-site-slogan {}
+#xo-site-slogan.commercial {}
+/*------------------------ logo ----------------------------*/
+#xo-main-logo {
+         position: relative;
+         top: 30px;
+         background: transparent no-repeat top left;
+         padding-left: 40px;
+         color: #fff;
+	 width: 200px;
+	 height: 50px;
+}
+#xo-main-logo.commercial {}
+/*-------- Bannder-----------*/
+#xo-banner form {}
+#xo-banner input { width: 150px; }
+/*============== Styles in userbar.html =================*/
+#xo-userbar {
+        position: absolute;
+        bottom: 120px;
+        right: 30px;
+        text-align: right;
+}
+#xo-userbar form {
+        display: inline;
+        padding: 0;
+}
+#xo-userbar button {
+        margin: 0;
+        background: transparent none;
+        padding: 0;
+        color: #aa4466;
+        border: 0 none transparent;
+}
+#xo-userbar button img {
+        width: 22px;
+        height: 22px;
+}
+#xo-userbar button:hover {
+         border: 0 !important;
+ }
+#xo-userbar img {
+        width: 26px;
+        height: 26px;
+}
+#xo-userbar a {
+        color: #fafafa;
+        background-color: inherit;
+        text-decoration: none;
+}
+#xo-userbar a:hover {
+        color: #eecc22;
+        background-color: inherit;
+}
+#xo-uname {
+        font-weight: bold;
+        font-size: 1.1em;
+}
+/*============= Style in globalnav.html ================*/
+#xo-globalnav {
+        min-height: 40px;
+        margin: 0;
+        background: #666;
+        color: #fafafa;
+        font-size: 1.1em;
+        list-style-type: none;
+	position: relative;
+	display: block;
+	padding: 0px;
+}
+#xo-globalnav .x2-label {
+        display: none;
+	
+}
+
+* html #xo-globalnav {
+        height: 40px;
+}
+
+#xo-globalnav ul {
+        list-style-type: none;
+        width: 966px;
+        position: absolute;
+        top: 0.4em;
+        display: inline;
+	margin: 0;
+	padding: 0 10px 0 10px;
+}
+
+#xo-globalnav ul li{
+	border-left: 1px solid #888;
+	border-right: 1px solid #888;
+	position: relative;
+	display: inline;
+	float: left;
+	z-index:auto !important ;
+	z-index: 1000;
+	width: auto;
+}
+
+#xo-globalnav ul li a{
+	color: #fafafa;
+	margin: 0 0px 0 0px;
+	display: block;
+	float:none !important ;
+	float: left;
+	line-height: 30px;
+	padding: 0 10px 0 10px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+}
+
+#xo-globalnav ul li a:hover{
+	color: #e7b707;
+	background: transparent;
+	font-style: normal;
+	text-decoration: none;
+	min-height: 30px;
+}
+
+#xo-globalnav ul li ul{
+	display: none;
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid #666;
+	border-left: none;
+	width: 150px;
+	margin: 0;
+	padding: 0;
+}
+
+#xo-globalnav ul li:hover a{
+
+}
+
+#xo-globalnav ul li:hover ul, #xo-globalnav ul li.hover ul{
+	display: block;
+	position: absolute;
+	z-index: 999;
+	top: 1.6em;
+	margin-top: 0em;
+	left: 0;
+}
+
+* #xo-globalnav table{
+	position: absolute;
+	top: -1px;
+	left: 0;
+	border-collapse: collapse;
+}
+
+#xo-globalnav ul li a:hover ul{
+	display: block;
+	position: absolute;
+	z-index: 999;
+	top: 0.0em;
+	left: 0;
+	margin-top: 0.1em;
+}
+
+#xo-globalnav ul li ul li{
+	background-color: #666;
+	margin: 0;
+	padding: 0;
+}
+
+
+#xo-globalnav ul li:hover ul li{
+	display: block;
+	width: 150px !important;
+	border-right: 1px solid #666;
+	border-left: 1px solid #666;
+	border-bottom: 1px solid #666;
+	top: .7em;
+	margin: 0;
+	padding: 0;
+}
+
+#xo-globalnav ul li a:hover ul li a{
+	display: block;
+	height: 1px;
+	line-height: 30px;
+	padding: 10px 10px 10px 10px;
+	border: none;
+	font-weight: normal;
+}
+
+#xo-globalnav ul li:hover ul li a{
+	font-size: .9em;
+	width: 140px !important;
+	text-align:left !important;
+	padding: 0 5px 0 5px;
+	margin: 0;
+
+}
+#xo-globalnav ul li ul li a:hover{
+	color: #e7b707;
+	background-color: #666;
+	text-decoration: none;
+	width: 140px !important;
+	margin: 0;
+	padding: 0 5px 0 5px;
+}
+
+#xo-globalnav li {
+        display: inline;
+	position: relative;
+	float: left;
+        margin: 0;
+        padding-left: .5em;
+        padding-right: .5em;
+}
+
+#xo-globalnav a {
+        background-color: inherit;
+        color: #fafafa;
+        text-decoration: none;
+}
+
+#xo-globalnav a:hover {
+        background-color: inherit;
+        color: #e7b707;
+        text-decoration: none;
+}
+
+/* ===== Footer ===== */
+#xo-footer {
+        background: #666;
+	margin: 0;
+	padding: 10px 0 0 0;
+        color: #fafafa;
+        font-size: .9em;
+        text-align: center;
+	height: 30px;
+	width: 100%;
+}
+
+body.theme-dialog #xo-footer {
+        padding: .2em .5em;
+        font-size: .8em;
+}
+
+#xo-footer a {
+        background-color: transparent;
+        color: #ddd;
+}
+
+#xo-footer a:hover {
+        background-color: transparent;
+        color: #fafafa;
+        text-decoration: underline;
+}
+
+/* ===== debug messages ===== */
+#xo-logger-output {
+    font-size: .8em;
+}
